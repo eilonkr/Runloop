@@ -1,0 +1,498 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		95294DFA255E748600473DCD /* APIResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95294DF9255E748500473DCD /* APIResult.swift */; };
+		95294DFD255E87B900473DCD /* Array+Ordering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95294DFC255E87B900473DCD /* Array+Ordering.swift */; };
+		95294E01255E978400473DCD /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95294E00255E978400473DCD /* Environment.swift */; };
+		95652648255D82C500F8664D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95652647255D82C500F8664D /* NetworkManager.swift */; };
+		95CE4A23255C1FA2007AF7B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CE4A22255C1FA2007AF7B6 /* AppDelegate.swift */; };
+		95CE4A25255C1FA2007AF7B6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CE4A24255C1FA2007AF7B6 /* SceneDelegate.swift */; };
+		95CE4A27255C1FA2007AF7B6 /* StickyPasscodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CE4A26255C1FA2007AF7B6 /* StickyPasscodeController.swift */; };
+		95CE4A2A255C1FA2007AF7B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95CE4A28255C1FA2007AF7B6 /* Main.storyboard */; };
+		95CE4A2C255C1FA3007AF7B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95CE4A2B255C1FA3007AF7B6 /* Assets.xcassets */; };
+		95CE4A2F255C1FA3007AF7B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95CE4A2D255C1FA3007AF7B6 /* LaunchScreen.storyboard */; };
+		95CE4A38255C2176007AF7B6 /* SlickyMockServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CE4A37255C2176007AF7B6 /* SlickyMockServer.swift */; };
+		95CE4A4B255C224B007AF7B6 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CE4A47255C224B007AF7B6 /* Storyboarded.swift */; };
+		95CE4A4E255C224B007AF7B6 /* Coordinator+Coordinated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CE4A4A255C224B007AF7B6 /* Coordinator+Coordinated.swift */; };
+		95CE4A55255C22AE007AF7B6 /* PasscodeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CE4A54255C22AE007AF7B6 /* PasscodeCoordinator.swift */; };
+		95CE4A5F255C22EF007AF7B6 /* MasterNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CE4A5C255C22EF007AF7B6 /* MasterNavigationController.swift */; };
+		95CE4A60255C22EF007AF7B6 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CE4A5D255C22EF007AF7B6 /* BaseController.swift */; };
+		95CE4A61255C22EF007AF7B6 /* Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CE4A5E255C22EF007AF7B6 /* Binding.swift */; };
+		95CE4A69255C2400007AF7B6 /* PasscodeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CE4A68255C2400007AF7B6 /* PasscodeViewModel.swift */; };
+		95CE4A6D255C2573007AF7B6 /* PasscodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CE4A6C255C2573007AF7B6 /* PasscodeView.swift */; };
+		95CE4A71255C27CE007AF7B6 /* NumberButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CE4A70255C27CE007AF7B6 /* NumberButton.swift */; };
+		95CE4A76255C2A70007AF7B6 /* UILabel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CE4A75255C2A70007AF7B6 /* UILabel+Extensions.swift */; };
+		95CE4A79255C2BE4007AF7B6 /* UIView+AutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CE4A78255C2BE4007AF7B6 /* UIView+AutoLayout.swift */; };
+		95CE4A7C255C57FD007AF7B6 /* NumbersData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CE4A7B255C57FD007AF7B6 /* NumbersData.swift */; };
+		95CE4A7F255C5C43007AF7B6 /* ProgressIndicatorStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CE4A7E255C5C43007AF7B6 /* ProgressIndicatorStack.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		95294DF9255E748500473DCD /* APIResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResult.swift; sourceTree = "<group>"; };
+		95294DFC255E87B900473DCD /* Array+Ordering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Ordering.swift"; sourceTree = "<group>"; };
+		95294E00255E978400473DCD /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		95652647255D82C500F8664D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		95CE4A1F255C1FA2007AF7B6 /* Sticky Passcode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sticky Passcode.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		95CE4A22255C1FA2007AF7B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		95CE4A24255C1FA2007AF7B6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		95CE4A26255C1FA2007AF7B6 /* StickyPasscodeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyPasscodeController.swift; sourceTree = "<group>"; };
+		95CE4A29255C1FA2007AF7B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		95CE4A2B255C1FA3007AF7B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		95CE4A2E255C1FA3007AF7B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		95CE4A30255C1FA3007AF7B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95CE4A37255C2176007AF7B6 /* SlickyMockServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlickyMockServer.swift; sourceTree = "<group>"; };
+		95CE4A47255C224B007AF7B6 /* Storyboarded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		95CE4A4A255C224B007AF7B6 /* Coordinator+Coordinated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Coordinator+Coordinated.swift"; sourceTree = "<group>"; };
+		95CE4A54255C22AE007AF7B6 /* PasscodeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeCoordinator.swift; sourceTree = "<group>"; };
+		95CE4A5C255C22EF007AF7B6 /* MasterNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterNavigationController.swift; sourceTree = "<group>"; };
+		95CE4A5D255C22EF007AF7B6 /* BaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
+		95CE4A5E255C22EF007AF7B6 /* Binding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Binding.swift; sourceTree = "<group>"; };
+		95CE4A68255C2400007AF7B6 /* PasscodeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeViewModel.swift; sourceTree = "<group>"; };
+		95CE4A6C255C2573007AF7B6 /* PasscodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeView.swift; sourceTree = "<group>"; };
+		95CE4A70255C27CE007AF7B6 /* NumberButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberButton.swift; sourceTree = "<group>"; };
+		95CE4A75255C2A70007AF7B6 /* UILabel+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extensions.swift"; sourceTree = "<group>"; };
+		95CE4A78255C2BE4007AF7B6 /* UIView+AutoLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+AutoLayout.swift"; sourceTree = "<group>"; };
+		95CE4A7B255C57FD007AF7B6 /* NumbersData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersData.swift; sourceTree = "<group>"; };
+		95CE4A7E255C5C43007AF7B6 /* ProgressIndicatorStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressIndicatorStack.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		95CE4A1C255C1FA2007AF7B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		95652646255D82B800F8664D /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				95652647255D82C500F8664D /* NetworkManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		95CE4A16255C1FA2007AF7B6 = {
+			isa = PBXGroup;
+			children = (
+				95CE4A21255C1FA2007AF7B6 /* Sticky Passcode */,
+				95CE4A20255C1FA2007AF7B6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		95CE4A20255C1FA2007AF7B6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				95CE4A1F255C1FA2007AF7B6 /* Sticky Passcode.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		95CE4A21255C1FA2007AF7B6 /* Sticky Passcode */ = {
+			isa = PBXGroup;
+			children = (
+				95CE4A28255C1FA2007AF7B6 /* Main.storyboard */,
+				95CE4A3E255C2216007AF7B6 /* LifeCycle */,
+				95CE4A3C255C220F007AF7B6 /* Screens */,
+				95CE4A81255D5EB1007AF7B6 /* Models */,
+				95652646255D82B800F8664D /* Managers */,
+				95CE4A41255C2220007AF7B6 /* Services */,
+				95CE4A50255C224F007AF7B6 /* Protocols */,
+				95CE4A63255C22F2007AF7B6 /* TopLevelClasses */,
+				95CE4A74255C2A49007AF7B6 /* Extensions */,
+				95CE4A2B255C1FA3007AF7B6 /* Assets.xcassets */,
+				95CE4A2D255C1FA3007AF7B6 /* LaunchScreen.storyboard */,
+				95CE4A30255C1FA3007AF7B6 /* Info.plist */,
+			);
+			path = "Sticky Passcode";
+			sourceTree = "<group>";
+		};
+		95CE4A3C255C220F007AF7B6 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				95CE4A66255C23F2007AF7B6 /* Passcode */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		95CE4A3E255C2216007AF7B6 /* LifeCycle */ = {
+			isa = PBXGroup;
+			children = (
+				95CE4A22255C1FA2007AF7B6 /* AppDelegate.swift */,
+				95CE4A24255C1FA2007AF7B6 /* SceneDelegate.swift */,
+			);
+			path = LifeCycle;
+			sourceTree = "<group>";
+		};
+		95CE4A41255C2220007AF7B6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				95CE4A37255C2176007AF7B6 /* SlickyMockServer.swift */,
+				95294E00255E978400473DCD /* Environment.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		95CE4A50255C224F007AF7B6 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				95CE4A47255C224B007AF7B6 /* Storyboarded.swift */,
+				95CE4A4A255C224B007AF7B6 /* Coordinator+Coordinated.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		95CE4A63255C22F2007AF7B6 /* TopLevelClasses */ = {
+			isa = PBXGroup;
+			children = (
+				95CE4A5E255C22EF007AF7B6 /* Binding.swift */,
+				95CE4A5D255C22EF007AF7B6 /* BaseController.swift */,
+				95CE4A5C255C22EF007AF7B6 /* MasterNavigationController.swift */,
+			);
+			path = TopLevelClasses;
+			sourceTree = "<group>";
+		};
+		95CE4A66255C23F2007AF7B6 /* Passcode */ = {
+			isa = PBXGroup;
+			children = (
+				95CE4A26255C1FA2007AF7B6 /* StickyPasscodeController.swift */,
+				95CE4A68255C2400007AF7B6 /* PasscodeViewModel.swift */,
+				95CE4A6C255C2573007AF7B6 /* PasscodeView.swift */,
+				95CE4A54255C22AE007AF7B6 /* PasscodeCoordinator.swift */,
+				95CE4A6F255C266A007AF7B6 /* UI_Elements */,
+			);
+			path = Passcode;
+			sourceTree = "<group>";
+		};
+		95CE4A6F255C266A007AF7B6 /* UI_Elements */ = {
+			isa = PBXGroup;
+			children = (
+				95CE4A70255C27CE007AF7B6 /* NumberButton.swift */,
+				95CE4A7E255C5C43007AF7B6 /* ProgressIndicatorStack.swift */,
+			);
+			path = UI_Elements;
+			sourceTree = "<group>";
+		};
+		95CE4A74255C2A49007AF7B6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				95CE4A75255C2A70007AF7B6 /* UILabel+Extensions.swift */,
+				95CE4A78255C2BE4007AF7B6 /* UIView+AutoLayout.swift */,
+				95294DFC255E87B900473DCD /* Array+Ordering.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		95CE4A81255D5EB1007AF7B6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				95CE4A7B255C57FD007AF7B6 /* NumbersData.swift */,
+				95294DF9255E748500473DCD /* APIResult.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		95CE4A1E255C1FA2007AF7B6 /* Sticky Passcode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95CE4A33255C1FA3007AF7B6 /* Build configuration list for PBXNativeTarget "Sticky Passcode" */;
+			buildPhases = (
+				95CE4A1B255C1FA2007AF7B6 /* Sources */,
+				95CE4A1C255C1FA2007AF7B6 /* Frameworks */,
+				95CE4A1D255C1FA2007AF7B6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Sticky Passcode";
+			productName = "Sticky Passcode";
+			productReference = 95CE4A1F255C1FA2007AF7B6 /* Sticky Passcode.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		95CE4A17255C1FA2007AF7B6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					95CE4A1E255C1FA2007AF7B6 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+				};
+			};
+			buildConfigurationList = 95CE4A1A255C1FA2007AF7B6 /* Build configuration list for PBXProject "Sticky Passcode" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 95CE4A16255C1FA2007AF7B6;
+			productRefGroup = 95CE4A20255C1FA2007AF7B6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				95CE4A1E255C1FA2007AF7B6 /* Sticky Passcode */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		95CE4A1D255C1FA2007AF7B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95CE4A2F255C1FA3007AF7B6 /* LaunchScreen.storyboard in Resources */,
+				95CE4A2C255C1FA3007AF7B6 /* Assets.xcassets in Resources */,
+				95CE4A2A255C1FA2007AF7B6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		95CE4A1B255C1FA2007AF7B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95652648255D82C500F8664D /* NetworkManager.swift in Sources */,
+				95CE4A27255C1FA2007AF7B6 /* StickyPasscodeController.swift in Sources */,
+				95294DFA255E748600473DCD /* APIResult.swift in Sources */,
+				95CE4A71255C27CE007AF7B6 /* NumberButton.swift in Sources */,
+				95CE4A7C255C57FD007AF7B6 /* NumbersData.swift in Sources */,
+				95CE4A60255C22EF007AF7B6 /* BaseController.swift in Sources */,
+				95CE4A69255C2400007AF7B6 /* PasscodeViewModel.swift in Sources */,
+				95CE4A55255C22AE007AF7B6 /* PasscodeCoordinator.swift in Sources */,
+				95CE4A38255C2176007AF7B6 /* SlickyMockServer.swift in Sources */,
+				95CE4A76255C2A70007AF7B6 /* UILabel+Extensions.swift in Sources */,
+				95294E01255E978400473DCD /* Environment.swift in Sources */,
+				95CE4A4E255C224B007AF7B6 /* Coordinator+Coordinated.swift in Sources */,
+				95CE4A6D255C2573007AF7B6 /* PasscodeView.swift in Sources */,
+				95CE4A7F255C5C43007AF7B6 /* ProgressIndicatorStack.swift in Sources */,
+				95CE4A4B255C224B007AF7B6 /* Storyboarded.swift in Sources */,
+				95CE4A79255C2BE4007AF7B6 /* UIView+AutoLayout.swift in Sources */,
+				95CE4A23255C1FA2007AF7B6 /* AppDelegate.swift in Sources */,
+				95CE4A25255C1FA2007AF7B6 /* SceneDelegate.swift in Sources */,
+				95CE4A5F255C22EF007AF7B6 /* MasterNavigationController.swift in Sources */,
+				95CE4A61255C22EF007AF7B6 /* Binding.swift in Sources */,
+				95294DFD255E87B900473DCD /* Array+Ordering.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		95CE4A28255C1FA2007AF7B6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95CE4A29255C1FA2007AF7B6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		95CE4A2D255C1FA3007AF7B6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95CE4A2E255C1FA3007AF7B6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		95CE4A31255C1FA3007AF7B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		95CE4A32255C1FA3007AF7B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		95CE4A34255C1FA3007AF7B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ER8P4V344B;
+				INFOPLIST_FILE = "Sticky Passcode/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eilon.Sticky-Passcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		95CE4A35255C1FA3007AF7B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ER8P4V344B;
+				INFOPLIST_FILE = "Sticky Passcode/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eilon.Sticky-Passcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		95CE4A1A255C1FA2007AF7B6 /* Build configuration list for PBXProject "Sticky Passcode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95CE4A31255C1FA3007AF7B6 /* Debug */,
+				95CE4A32255C1FA3007AF7B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95CE4A33255C1FA3007AF7B6 /* Build configuration list for PBXNativeTarget "Sticky Passcode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95CE4A34255C1FA3007AF7B6 /* Debug */,
+				95CE4A35255C1FA3007AF7B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 95CE4A17255C1FA2007AF7B6 /* Project object */;
+}

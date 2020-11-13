@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sticky Passcode Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="StickyPasscodeController" id="BYZ-38-t0r" customClass="StickyPasscodeController" customModule="Sticky_Passcode" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter your 4 digit pin code:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4pJ-KE-ERS">
+                                <rect key="frame" x="20" y="84" width="374" height="26.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <color key="textColor" red="0.94117647058823528" green="0.69411764705882351" blue="0.25882352941176467" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="100" placeholderIntrinsicHeight="20" translatesAutoresizingMaskIntoConstraints="NO" id="QBw-P4-x4X" customClass="ProgressIndicatorStack" customModule="Sticky_Passcode" customModuleProvider="target">
+                                <rect key="frame" x="157" y="130.5" width="100" height="20"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="300" translatesAutoresizingMaskIntoConstraints="NO" id="kMA-gc-9Dt" customClass="PasscodeView" customModule="Sticky_Passcode" customModuleProvider="target">
+                                <rect key="frame" x="20" y="200.5" width="374" height="300"/>
+                                <color key="backgroundColor" systemColor="tertiarySystemFillColor"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="ZT4-0V-YuN">
+                                <rect key="frame" x="20" y="799" width="374" height="33"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zcm-qS-CvC">
+                                        <rect key="frame" x="0.0" y="0.0" width="54" height="33"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                        <state key="normal" title="Cancel">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="cancelTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X9v-TT-Mfl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3nM-mM-LF6">
+                                        <rect key="frame" x="324" y="0.0" width="50" height="33"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="Delete">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="deleteTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FvN-BW-koV"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.082352941176470587" green="0.094117647058823528" blue="0.10588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ZT4-0V-YuN" secondAttribute="bottom" constant="30" id="Bec-aR-ezq"/>
+                            <constraint firstItem="ZT4-0V-YuN" firstAttribute="leading" secondItem="kMA-gc-9Dt" secondAttribute="leading" id="GEH-yg-l11"/>
+                            <constraint firstItem="4pJ-KE-ERS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="SPI-7p-wPP"/>
+                            <constraint firstItem="kMA-gc-9Dt" firstAttribute="top" secondItem="QBw-P4-x4X" secondAttribute="bottom" constant="50" id="TlL-dv-1St"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kMA-gc-9Dt" secondAttribute="trailing" constant="20" id="Yxq-Uh-yM3"/>
+                            <constraint firstItem="kMA-gc-9Dt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ZF5-Sd-3et"/>
+                            <constraint firstItem="ZT4-0V-YuN" firstAttribute="top" relation="greaterThanOrEqual" secondItem="kMA-gc-9Dt" secondAttribute="bottom" constant="20" id="a9F-zp-ipc"/>
+                            <constraint firstItem="QBw-P4-x4X" firstAttribute="top" secondItem="4pJ-KE-ERS" secondAttribute="bottom" constant="20" id="dwc-dC-EGP"/>
+                            <constraint firstItem="ZT4-0V-YuN" firstAttribute="trailing" secondItem="kMA-gc-9Dt" secondAttribute="trailing" id="hrs-RP-mDn"/>
+                            <constraint firstItem="QBw-P4-x4X" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="tjB-7d-Paz"/>
+                            <constraint firstItem="4pJ-KE-ERS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="umB-Cp-HWB"/>
+                            <constraint firstAttribute="trailing" secondItem="4pJ-KE-ERS" secondAttribute="trailing" constant="20" id="vfk-gD-XsF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="passcodeView" destination="kMA-gc-9Dt" id="h7E-wq-61J"/>
+                        <outlet property="progressIndicatorView" destination="QBw-P4-x4X" id="cDd-0y-lnq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="103" y="117"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemFillColor">
+            <color red="0.46274509803921571" green="0.46274509803921571" blue="0.50196078431372548" alpha="0.12" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

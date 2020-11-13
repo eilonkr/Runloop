@@ -8,7 +8,7 @@
 import UIKit
 
 class MasterNavigationController: UINavigationController {
-        
+    
     private weak var loadingLayer: LoadingLayer?
     
     public var isLoadingInterfaceRunning: Bool = false {
@@ -21,8 +21,6 @@ class MasterNavigationController: UINavigationController {
         }
     }
     
-    override var preferredStatusBarStyle: UIStatusBarStyle { .lightContent }
-
     override func viewDidLoad() {
         super.viewDidLoad()
         configure()
@@ -67,7 +65,7 @@ fileprivate final class LoadingLayer: UIView {
     public func start() {
         self.indicator.startAnimating()
         UIView.animate(withDuration: 0.2) {
-            self.backgroundColor = UIColor.black.withAlphaComponent(0.45)
+            self.backgroundColor = UIColor.black.withAlphaComponent(0.55)
         }
     }
     

@@ -16,7 +16,8 @@ final class NumberButton: UIView {
     private var additionalText: String?
     
     override var intrinsicContentSize: CGSize {
-        CGSize(width: 80, height: 80.0)
+        let width = UIScreen.main.bounds.width * 0.22
+        return CGSize(width: width, height: width)
     }
     
     public init(numberData: NumberData, tapHandler: TapHandler?) {

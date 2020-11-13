@@ -10,6 +10,7 @@
 		95294DFA255E748600473DCD /* APIResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95294DF9255E748500473DCD /* APIResult.swift */; };
 		95294DFD255E87B900473DCD /* Array+Ordering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95294DFC255E87B900473DCD /* Array+Ordering.swift */; };
 		95294E01255E978400473DCD /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95294E00255E978400473DCD /* Environment.swift */; };
+		95294E0C255EA1BF00473DCD /* PasscodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95294E0B255EA1BF00473DCD /* PasscodeView.swift */; };
 		95652648255D82C500F8664D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95652647255D82C500F8664D /* NetworkManager.swift */; };
 		95CE4A23255C1FA2007AF7B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CE4A22255C1FA2007AF7B6 /* AppDelegate.swift */; };
 		95CE4A25255C1FA2007AF7B6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CE4A24255C1FA2007AF7B6 /* SceneDelegate.swift */; };
@@ -25,7 +26,6 @@
 		95CE4A60255C22EF007AF7B6 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CE4A5D255C22EF007AF7B6 /* BaseController.swift */; };
 		95CE4A61255C22EF007AF7B6 /* Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CE4A5E255C22EF007AF7B6 /* Binding.swift */; };
 		95CE4A69255C2400007AF7B6 /* PasscodeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CE4A68255C2400007AF7B6 /* PasscodeViewModel.swift */; };
-		95CE4A6D255C2573007AF7B6 /* PasscodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CE4A6C255C2573007AF7B6 /* PasscodeView.swift */; };
 		95CE4A71255C27CE007AF7B6 /* NumberButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CE4A70255C27CE007AF7B6 /* NumberButton.swift */; };
 		95CE4A76255C2A70007AF7B6 /* UILabel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CE4A75255C2A70007AF7B6 /* UILabel+Extensions.swift */; };
 		95CE4A79255C2BE4007AF7B6 /* UIView+AutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CE4A78255C2BE4007AF7B6 /* UIView+AutoLayout.swift */; };
@@ -37,6 +37,7 @@
 		95294DF9255E748500473DCD /* APIResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResult.swift; sourceTree = "<group>"; };
 		95294DFC255E87B900473DCD /* Array+Ordering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Ordering.swift"; sourceTree = "<group>"; };
 		95294E00255E978400473DCD /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		95294E0B255EA1BF00473DCD /* PasscodeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PasscodeView.swift; path = "Sticky Passcode/Screens/Passcode/PasscodeView.swift"; sourceTree = SOURCE_ROOT; };
 		95652647255D82C500F8664D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		95CE4A1F255C1FA2007AF7B6 /* Sticky Passcode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sticky Passcode.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		95CE4A22255C1FA2007AF7B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -54,7 +55,6 @@
 		95CE4A5D255C22EF007AF7B6 /* BaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
 		95CE4A5E255C22EF007AF7B6 /* Binding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Binding.swift; sourceTree = "<group>"; };
 		95CE4A68255C2400007AF7B6 /* PasscodeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeViewModel.swift; sourceTree = "<group>"; };
-		95CE4A6C255C2573007AF7B6 /* PasscodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeView.swift; sourceTree = "<group>"; };
 		95CE4A70255C27CE007AF7B6 /* NumberButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberButton.swift; sourceTree = "<group>"; };
 		95CE4A75255C2A70007AF7B6 /* UILabel+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extensions.swift"; sourceTree = "<group>"; };
 		95CE4A78255C2BE4007AF7B6 /* UIView+AutoLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+AutoLayout.swift"; sourceTree = "<group>"; };
@@ -166,7 +166,6 @@
 			children = (
 				95CE4A26255C1FA2007AF7B6 /* StickyPasscodeController.swift */,
 				95CE4A68255C2400007AF7B6 /* PasscodeViewModel.swift */,
-				95CE4A6C255C2573007AF7B6 /* PasscodeView.swift */,
 				95CE4A54255C22AE007AF7B6 /* PasscodeCoordinator.swift */,
 				95CE4A6F255C266A007AF7B6 /* UI_Elements */,
 			);
@@ -176,6 +175,7 @@
 		95CE4A6F255C266A007AF7B6 /* UI_Elements */ = {
 			isa = PBXGroup;
 			children = (
+				95294E0B255EA1BF00473DCD /* PasscodeView.swift */,
 				95CE4A70255C27CE007AF7B6 /* NumberButton.swift */,
 				95CE4A7E255C5C43007AF7B6 /* ProgressIndicatorStack.swift */,
 			);
@@ -283,7 +283,6 @@
 				95CE4A76255C2A70007AF7B6 /* UILabel+Extensions.swift in Sources */,
 				95294E01255E978400473DCD /* Environment.swift in Sources */,
 				95CE4A4E255C224B007AF7B6 /* Coordinator+Coordinated.swift in Sources */,
-				95CE4A6D255C2573007AF7B6 /* PasscodeView.swift in Sources */,
 				95CE4A7F255C5C43007AF7B6 /* ProgressIndicatorStack.swift in Sources */,
 				95CE4A4B255C224B007AF7B6 /* Storyboarded.swift in Sources */,
 				95CE4A79255C2BE4007AF7B6 /* UIView+AutoLayout.swift in Sources */,
@@ -291,6 +290,7 @@
 				95CE4A25255C1FA2007AF7B6 /* SceneDelegate.swift in Sources */,
 				95CE4A5F255C22EF007AF7B6 /* MasterNavigationController.swift in Sources */,
 				95CE4A61255C22EF007AF7B6 /* Binding.swift in Sources */,
+				95294E0C255EA1BF00473DCD /* PasscodeView.swift in Sources */,
 				95294DFD255E87B900473DCD /* Array+Ordering.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,14 +7,17 @@
 
 import UIKit
 
+// MARK: - View Delegate
+
 protocol PasscodeViewDelegate: AnyObject {
     func numberRegistered(_ number: Int)
 }
 
+// MARK: - PasscodeView
+
 final class PasscodeView: UIView {
     
     private weak var delegate: PasscodeViewDelegate?
-    private var viewModel: PasscodeViewModel?
     
     private let mainStack: UIStackView = {
         let stack = UIStackView()
@@ -31,9 +34,8 @@ final class PasscodeView: UIView {
         }
     }
 
-    init(delegate: PasscodeViewDelegate, viewModel: PasscodeViewModel?) {
+    init(delegate: PasscodeViewDelegate) {
         self.delegate = delegate
-        self.viewModel = viewModel
         super.init(frame: .zero)
         backgroundColor = nil
     }
@@ -44,9 +46,8 @@ final class PasscodeView: UIView {
     }
     
     /// For storyboard usage.
-    public func set(delegate: PasscodeViewDelegate?, viewModel: PasscodeViewModel?) {
+    public func set(delegate: PasscodeViewDelegate?) {
         self.delegate = delegate
-        self.viewModel = viewModel
     }
     
     // MARK: - Layout Configuration
@@ -57,13 +58,17 @@ final class PasscodeView: UIView {
             resetButtons()
         }
         
+        // Order the buttons
         let allNumbers = NumberData.allNumbers.reorder(by: buttonOrder.map { NumberData(number: $0, additionalText: nil) })
+        
+        // Create the layout
         var subSequences = [Array<NumberData>.SubSequence]()
         for i in 0 ..< 4 {
             let slice = allNumbers[(i*3) ..< min((i*3)+3, allNumbers.count)]
             subSequences.append(slice)
         }
         
+        // Generate the numbers
         for seq in subSequences {
             let buttons = seq.map({ NumberButton(numberData: $0) { [unowned self] number in
                 delegate?.numberRegistered(number)
